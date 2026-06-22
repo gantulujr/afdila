@@ -1,0 +1,19 @@
+name: Expo Deploy
+
+on:
+  push:
+    branches:
+      - main  # atau branch yang kamu gunakan
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm install --global expo-cli
+      - run: expo login --username ${{ secrets.EXPO_USERNAME }} --password ${{ secrets.EXPO_PASSWORD }}
+      - run: expo publish
