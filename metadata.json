@@ -1,0 +1,6 @@
+{
+  "name": "WhatsApp Mobile CRM - Chat Inbox App",
+  "description": "WhatsApp mobile CRM chat inbox simulator with interactive Expo codebase visualization, live WhatsApp Cloud API forwarding, and real-time Firebase simulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
